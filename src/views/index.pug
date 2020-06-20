@@ -5,17 +5,16 @@ block variables
     - const title = "Construction Zone Homepage"
 
 block content
-    include ../blocks/modules/header/header
     main.main
         include ../blocks/modules/section-hero/section-hero
         include ../blocks/modules/section-allinone/section-allinone
+        include ../blocks/modules/section-question/section-question
         include ../blocks/modules/section-brown/section-brown
         include ../blocks/modules/section-decision/section-decision
-        include ../blocks/modules/section-question/section-question
 
     include ../blocks/modules/footer/footer
 
 
 block scripts
     script(src="js/main.js")
-    //script(src="js/vendor.js")
+    script(src="js/vendor.js")

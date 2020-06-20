@@ -1,0 +1,33 @@
+.question {
+    position: relative;
+    //overflow: hidden;
+    padding: 160px 0;
+    .question-bg {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 35%;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/general/imac.jpg");
+        background-position: 5% 5%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0 0 16px 10px rgba($gray-500, 0.4);
+        &:before {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 16px 8px rgba($gray-500, 0.4);
+        }
+    }
+    &-card {
+        padding: 6rem;
+        background: $dark;
+    }
+}

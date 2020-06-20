@@ -61,7 +61,7 @@
         "imagemin-zopfli": "^6.0.0",
         "lint-staged": "^10.0.3",
         "require-dir": "^1.2.0",
-        "stylelint": "^10.0.1",
+        "stylelint": "^13.6.1",
         "stylelint-order": "^3.0.0",
         "stylelint-selector-bem-pattern": "^2.1.0",
         "webpack": "~4.35.0",
@@ -70,8 +70,8 @@
     },
     "dependencies": {
         "bootstrap": "^4.5.0",
-        "jquery": "1.9.1",
-        "popper.js": "^1.16.0",
+        "jquery": "^3.5.1",
+        "popper.js": "^1.16.1",
         "smart-grid": "^2.1.2"
     },
     "husky": {
