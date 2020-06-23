@@ -1,6 +1,6 @@
 .question {
     position: relative;
-    //overflow: hidden;
+    overflow: hidden;
     padding: 160px 0;
     .question-bg {
         position: absolute;
@@ -23,7 +23,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            box-shadow: 0 0 16px 8px rgba($gray-500, 0.4);
+            box-shadow: 0 0 16px 10px rgba($gray-500, 0.4);
         }
     }
     &-card {
