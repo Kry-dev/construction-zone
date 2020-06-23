@@ -6,13 +6,28 @@
     li {
         padding: 0;
         a {
-            font-size: 1.5rem;
-            width: 1.5rem;
-            height: 1.5rem;
-            img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: rem(34);
+            height: rem(34);
+            border-radius: 50%;
+            background: $dark;
+            svg {
+                fill: $brown-light;
+            }
+            img, svg {
                 display: block;
-                width: 100%;
-                height: 100%;
+                width: rem(24);
+                height: rem(24);
+            }
+            &:hover, &:focus {
+                background: $brown-light;
+                transition: $transition-base;
+                svg {
+                    fill: $dark;
+                    transition: $transition-base;
+                }
             }
         }
     }
