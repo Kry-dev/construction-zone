@@ -4,4 +4,32 @@
     &-logo {
         margin-bottom: 2rem;
     }
+    &-col {
+        padding: rem(24) 0;
+        .lead {
+            margin-bottom: rem(20);
+        }
+        &--border {
+            position: relative;
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100px;
+                height: 3px;
+                background: $primary;
+            }
+        }
+    }
+    &-form {
+        .form-control {
+            background-color: transparent;
+            color: $white;
+            border: 0;
+            border-bottom: 1px solid $white;
+            padding-left: 0;
+        }
+    }
 }
