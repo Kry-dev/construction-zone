@@ -131,6 +131,11 @@ h1, h2, h3, h4, h5, h6, ul {
             border-color: $white;
         }
     }
+    &.text-dark {
+        &:hover, &:focus {
+            color: $brown-light !important;
+        }
+    }
 }
 .display-4 {
     font-size: $h1-font-size;
@@ -141,7 +146,7 @@ h1, h2, h3, h4, h5, h6, ul {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    max-width: 260px;
+    width: 260px;
     &-img {
         width: 70px;
         height: 50px;

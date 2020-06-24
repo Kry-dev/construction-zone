@@ -4,10 +4,10 @@
             img.logo-img(src="img/general/logo.png" alt="Logo")
             .logo-title Construction Zone
                 span wev design & seo
-        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+        button#nav-toggle.navbar-toggler(type='button')
             span
             span
-        ul#navbarNav.navbar-nav.ml-auto.collapse
+        ul#nav-menu.nav.nav-menu
             li.nav-item
                 a.nav-link(href='#') Home
             li.nav-item
@@ -16,14 +16,10 @@
                 a.nav-link(href='#') Pricing
             li.nav-item
                 a.nav-link(href='#') Contact
-            li.nav-item.show
-                a.nav-link(href='#') Login
-            li.nav-item.show
-                a.nav-link(href='#') Get Started
-        //ul.navbar-nav.ml-auto
-        //    li.nav-item
-        //        a.nav-link(href='#') Login
-        //    li.nav-item
-        //        a.nav-link(href='#') Get Started
+        ul.nav.nav-right.ml-auto
+            li
+                a.btn.text-dark(href='#') Log in
+            li
+                a.btn.btn-primary(href='#') Get Started
 
 

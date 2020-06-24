@@ -1,4 +1,4 @@
-
+import $ from "jquery";
 window.onscroll = function () {
     myFunction();
 };
@@ -17,3 +17,9 @@ function myFunction() {
         navbar.classList.remove("shadow");
     }
 }
+
+
+$("#nav-toggle").click(function(){
+    $(this).toggleClass("active");
+    $(".nav-menu").toggleClass("d-flex");
+});
