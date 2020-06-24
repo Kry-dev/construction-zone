@@ -75,11 +75,6 @@
         "popper.js": "^1.16.1",
         "smart-grid": "^2.1.2"
     },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
     "lint-staged": {
         "!(_*).scss": [
             "stylelint --fix --color --config ./.stylelintrc"
