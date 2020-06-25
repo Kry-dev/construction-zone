@@ -137,22 +137,31 @@
 .dropdown-trigger {
 
     @include media-breakpoint-down(sm) {
-        margin: 0 30px 0 15px;
+        //margin: 0 30px 0 15px;
     }
     @include media-breakpoint-down(xl) {
-        margin: 0 60px 0 40px;
+        //margin: 0 60px 0 40px;
     }
     position: relative;
-    width: 30px;
-    height: 20px;
-    margin: 0 15px 0 0;
+    width: 40px;
+    height: 40px;
+    margin: 0 0 0 4rem;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    background: transparent;
     cursor: pointer;
+    &:hover, &:focus {
+        outline: 0;
+        border: 0;
+    }
     &:hover, &__item, &__item::before, &__item::after {
         opacity: 0.75;
     }
 
     &__item {
         position: relative;
+        opacity: 1;
     }
     
     &__item::before, &__item::after {
@@ -160,20 +169,21 @@
         display: block;
         position: absolute;
         right: 0;
-    }
-    
-    &__item, &__item::before, &__item::after {
-        background: $white;
-        height: 2px;
-        transition: opacity .3s;
+        opacity: 1;
     }
     
     &__item, &__item::before {
-        width: 27px;
+        height: 2px;
+        transition: opacity .3s;
+        background: $white;
+    }
+    
+    &__item, &__item::before {
+        width: 40px;
     }
     
     &__item::before {
         top: 7px;
-        width: 21px;
+        width: 30px;
     }
 }

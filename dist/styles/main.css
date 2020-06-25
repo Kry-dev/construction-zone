@@ -8550,10 +8550,20 @@ ul {
 
 .dropdown-trigger {
   position: relative;
-  width: 30px;
-  height: 20px;
-  margin: 0 15px 0 0;
+  width: 40px;
+  height: 40px;
+  margin: 0 0 0 4rem;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  background: transparent;
   cursor: pointer;
+}
+
+.dropdown-trigger:hover,
+.dropdown-trigger:focus {
+  outline: 0;
+  border: 0;
 }
 
 .dropdown-trigger:hover,
@@ -8565,6 +8575,7 @@ ul {
 
 .dropdown-trigger__item {
   position: relative;
+  opacity: 1;
 }
 
 .dropdown-trigger__item::before,
@@ -8573,24 +8584,24 @@ ul {
   display: block;
   position: absolute;
   right: 0;
-}
-
-.dropdown-trigger__item,
-.dropdown-trigger__item::before,
-.dropdown-trigger__item::after {
-  background: #fff;
-  height: 2px;
-  transition: opacity .3s;
+  opacity: 1;
 }
 
 .dropdown-trigger__item,
 .dropdown-trigger__item::before {
-  width: 27px;
+  height: 2px;
+  transition: opacity .3s;
+  background: #fff;
+}
+
+.dropdown-trigger__item,
+.dropdown-trigger__item::before {
+  width: 40px;
 }
 
 .dropdown-trigger__item::before {
   top: 7px;
-  width: 21px;
+  width: 30px;
 }
 
 .footer {
@@ -14338,10 +14349,6 @@ ul {
     padding-left: 0;
   }
 
-  .dropdown-trigger {
-    margin: 0 60px 0 40px;
-  }
-
   .aside-dropdown__close {
     top: 19px;
   }
@@ -14390,10 +14397,6 @@ ul {
   .navbar-expand-md > .container-xl {
     padding-right: 0;
     padding-left: 0;
-  }
-
-  .dropdown-trigger {
-    margin: 0 30px 0 15px;
   }
 }
 
