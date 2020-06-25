@@ -26,10 +26,11 @@ html(lang="en")
         //link(rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png")
         //link(rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png")
         // Google fonts
-        //    link(href='https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,400;0,600;0,700;1,600&family=Philosopher:wght@400;700&display=swap', rel='stylesheet')
-        link(href='https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&display=swap', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,400;0,600;0,700;1,600&family=Philosopher:wght@400;700&display=swap', rel='stylesheet')
+        //link(href='https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&display=swap', rel='stylesheet')
         //main css
         link(rel="stylesheet" href="styles/main.css")
     body
         block content
         block scripts
+        div(style="display:none;"): include ../../img/sprites/sprite.svg

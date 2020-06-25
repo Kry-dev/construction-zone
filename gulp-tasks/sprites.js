@@ -1,6 +1,6 @@
 "use strict";
 
-import { paths } from "../gulpfile.babel";
+import {paths} from "../gulpfile.babel";
 import gulp from "gulp";
 import svg from "gulp-svg-sprite";
 import debug from "gulp-debug";
@@ -18,6 +18,7 @@ gulp.task("sprites", () => {
                 }
             }
         }))
+        .pipe(gulp.dest(paths.sprites.srcSvg))
         .pipe(gulp.dest(paths.sprites.dist))
         .pipe(debug({
             "title": "Sprites"

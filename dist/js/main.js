@@ -155,6 +155,41 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/blocks/modules/aside-dropdown/aside-dropdown.js":
+/*!*************************************************************!*\
+  !*** ./src/blocks/modules/aside-dropdown/aside-dropdown.js ***!
+  \*************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+ // aside dropdown
+
+function asideDropdown() {
+  var dropdown = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".aside-dropdown");
+  if (!dropdown.length) return;
+  var trigger = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropdown-trigger");
+  var close = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".aside-dropdown__close");
+  trigger.on("click", function () {
+    dropdown.addClass("aside-dropdown--active");
+  });
+  close.on("click", function () {
+    dropdown.removeClass("aside-dropdown--active");
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).on("click", function (event) {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(event.target).closest(".dropdown-trigger, .aside-dropdown__inner").length) return;
+    dropdown.removeClass("aside-dropdown--active");
+    event.stopPropagation();
+  });
+}
+
+asideDropdown();
+
+/***/ }),
+
 /***/ "./src/blocks/modules/header/header.js":
 /*!*********************************************!*\
   !*** ./src/blocks/modules/header/header.js ***!
@@ -235,6 +270,8 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
+/* harmony import */ var _modules_aside_dropdown_aside_dropdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/aside-dropdown/aside-dropdown */ "./src/blocks/modules/aside-dropdown/aside-dropdown.js");
+
 
 
 /***/ }),
