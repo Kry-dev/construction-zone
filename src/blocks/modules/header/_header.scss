@@ -155,7 +155,7 @@
         outline: 0;
         border: 0;
     }
-    &:hover, &__item, &__item::before, &__item::after {
+    &:hover, &__item, &__item::before {
         opacity: 0.75;
     }
 
@@ -164,7 +164,7 @@
         opacity: 1;
     }
     
-    &__item::before, &__item::after {
+    &__item::before {
         content: "";
         display: block;
         position: absolute;
@@ -185,5 +185,6 @@
     &__item::before {
         top: 7px;
         width: 30px;
+        height: 3px;
     }
 }

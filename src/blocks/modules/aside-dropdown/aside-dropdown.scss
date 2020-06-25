@@ -1,27 +1,6 @@
 /* aside dropdown start*/
 
 .aside-dropdown {
-    @include media-breakpoint-down(md) {
-        &__close {
-            top: 12px;
-            right: auto;
-            left: 25px;
-        }
-    }
-    
-    @include media-breakpoint-down(lg) {
-        &__close {
-            left: 35px;
-        }
-    }
-    
-    
-    @include media-breakpoint-down(xl) {
-        &__close {
-            top: 19px;
-        }
-    }
-    
     @include media-breakpoint-up(sm) {
         &__inner {
             width: 320px;
@@ -39,47 +18,34 @@
     visibility: hidden;
     background-color: rgba(0, 0, 0, 0.4);
     
-    .button {
-        font-size: 14px;
-        padding: 31px 30px 32px 30px;
-    }
-    
-    .button:hover {
-        color: $blue;
-        background: $primary;
-    }
-    
     &__close {
         position: absolute;
         top: 12px;
         right: 7px;
+        width: 40px;
+        height: 40px;
         padding: 10px;
         cursor: pointer;
         color: $white;
+        .icon {
+            width: 100%;
+            height: 100%;
+        }
     }
     
     &__inner {
         position: relative;
         width: 100%;
         min-height: 100%;
-        padding: 110px 0 50px 0;
+        padding: $header-height 0 rem(50) 0;
         transform: translateX(-320px);
         transition: all .3s;
-        background-color: $primary;
+        background-color: $brown;
         box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
     }
     
-    &__item:first-of-type, &__item:nth-of-type(2) {
-        padding: 0 65px;
-    }
-    
-    &__item:nth-of-type(2) {
-        margin-top: 50px;
-    }
-    
-    &__item:nth-of-type(3) {
-        padding: 0 30px;
-        margin-top: 50px;
+    &__item {
+        padding: 0 3rem;
     }
 }
 
@@ -108,67 +74,34 @@
     }
     
     &__link {
-        color: inherit;
-        font-size: 14px;
+        display: block;
+        position: relative;
+        width: 100%;
+        transition: opacity .3s;
+        color: $white;
+        font-size: rem(18);
+        font-family: "Muli", sans-serif;
         font-weight: 500;
         text-transform: uppercase;
         text-decoration: none;
-        transition: opacity .3s;
-    }
-    
-    &__link:hover {
-        color: inherit;
-        opacity: 0.75;
-    }
-    
-    &__sub-list {
-        display: none;
-        margin: 10px 0 0 0;
-        padding: 0 0 0 15px;
-        list-style: none;
-        
-        &__sub-list a {
-            transition: color .3s;
-            color: $white;
-            font-size: 14px;
-            font-weight: 500;
-            text-decoration: none;
-        }
-        
-        &__sub-list li:not(:last-of-type) {
-            margin-bottom: 6px;
-        }
-        
-        &__item--has-child &__link span {
-            position: relative;
-        }
-        
-        &__item--has-child &__link span::after {
+        &:after {
             content: "";
-            display: inline-block;
+            display: block;
             position: absolute;
-            top: 7px;
-            right: -15px;
-            width: 3px;
-            height: 3px;
-            transition: background .3s;
-            pointer-events: none;
-            border-radius: 50%;
+            bottom: 1px;
+            left: 0;
+            width: 0;
+            height: 1px;
             background: $white;
-            opacity: 0.75;
         }
-        
-        &__item--active &__link {
+        &:hover, &:focus {
+            cursor: pointer;
             color: inherit;
-            opacity: 0.75;
-        }
-        
-        &__item--active &__link span::after {
-            background: $primary;
-        }
-        
-        &__sub-list li.item--active a, &__sub-list li a:hover {
-            color: #c4c4c4;
+            text-decoration: none;
+            &:after {
+                width: 100%;
+                transition: $transition-base;
+            }
         }
     }
 }
@@ -181,7 +114,7 @@
     align-items: flex-start;
     
     &__title {
-        color: #818ea9;
+        color: $brown-light;
         font-size: 11px;
         line-height: 25px;
         font-weight: 700;
@@ -216,8 +149,14 @@
 
 .aside-socials {
     display: inline-flex;
-    margin: 68px 0 0 0;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1.5rem auto;
     padding: 0;
+    .icon {
+        width: 100%;
+        height: 100%;
+    }
     
     &__item {
         list-style: none;
@@ -228,8 +167,10 @@
     }
     
     &__link {
-        color: #818ea9;
-        transition: opacity .3s;
+        display: block;
+        width: 24px;
+        height: 24px;
+        transition: opacity 1s;
     }
     
     &__link:hover {
