@@ -1,4 +1,4 @@
-modules.define('add', ['i-bem-dom'], function(provide, bemDom) {
+modules.define('social', ['i-bem-dom'], function(provide, bemDom) {
 
 provide(bemDom.declBlock(this.name, {
     onSetMod: {

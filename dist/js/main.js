@@ -222,10 +222,21 @@ function myFunction() {
   }
 }
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default()("#nav-toggle").click(function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).toggleClass("active");
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()(".nav-menu").toggleClass("d-flex");
-});
+/***/ }),
+
+/***/ "./src/blocks/modules/hero/hero.js":
+/*!*****************************************!*\
+  !*** ./src/blocks/modules/hero/hero.js ***!
+  \*****************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(".hero-video--play").fancybox();
 
 /***/ }),
 
@@ -254,6 +265,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var popper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js");
 /* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
 /* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _fancyapps_fancybox_dist_jquery_fancybox_min_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fancyapps/fancybox/dist/jquery.fancybox.min.js */ "./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js");
+/* harmony import */ var _fancyapps_fancybox_dist_jquery_fancybox_min_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_fancyapps_fancybox_dist_jquery_fancybox_min_js__WEBPACK_IMPORTED_MODULE_3__);
+
 
 
 
@@ -271,6 +285,8 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
 /* harmony import */ var _modules_aside_dropdown_aside_dropdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/aside-dropdown/aside-dropdown */ "./src/blocks/modules/aside-dropdown/aside-dropdown.js");
+/* harmony import */ var _modules_hero_hero__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/hero/hero */ "./src/blocks/modules/hero/hero.js");
+
 
 
 

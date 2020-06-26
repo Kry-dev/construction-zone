@@ -5,6 +5,9 @@
     min-height: rem(750);
     background: $dark;
     .jumbotron {
+        @include media-breakpoint-down(md) {
+            max-width: 100%;
+        }
         margin: auto 0;
     }
     &-title {
@@ -19,8 +22,15 @@
         margin-bottom: rem(32);
     }
     &-social {
+        @include media-breakpoint-down(md) {
+            //background: $brown-light;
+            &:after {
+                display: none;
+            }
+        }
         display: flex;
         align-items: center;
+        
         position: relative;
         z-index: 3;
         width: 100%;
@@ -37,8 +47,20 @@
             height: 100%;
             background: $dark;
         }
+        .social-link {
+            background: transparent;
+        }
+        .social {
+            @include media-breakpoint-down(md) {
+                justify-content: center;
+            }
+            justify-content: flex-end;
+        }
     }
     &-video {
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
         display: flex;
         align-items: center;
         position: absolute;
@@ -72,19 +94,60 @@
         }
         &--video {
             position: relative;
-            //width: 100%;
             height: 100%;
-            //&:before {
-            //    content: "";
-            //    display: block;
-            //    position: absolute;
-            //    z-index: 2;
-            //    top: 0;
-            //    left: 0;
-            //    width: 100%;
-            //    height: 100%;
-            //    background: rgba($dark, .3);
-            //}
+        }
+        &--play {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            z-index: 5;
+            bottom: 150px;
+            left: 50%;
+            width: 110px;
+            height: 110px;
+            overflow: hidden;
+            border: solid 10px rgba($dark, .3);
+            padding: 10px;
+            transform: translateX(-50%);
+            background: rgba($brown, .3);
+            border-radius: 50%;
+            text-indent: -9999px;
+            transition: $transition-base;
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                z-index: 6;
+                top: 50%;
+                left: 50%;
+                width: 100px;
+                height: 100px;
+                transform: translate(-50%, -50%);
+                background: $brown;
+                box-shadow: $box-shadow;
+            }
+            span {
+                position: relative;
+                z-index: 6;
+                width: 0;
+                height: 0;
+                border-top: 15px solid transparent;
+                border-left: 20px solid $brown-light;
+                border-bottom: 15px solid transparent;
+            }
+            &:hover, &:focus {
+                &:before {
+                    background: $white;
+                    transition: $transition-base;
+                }
+                span {
+                    border-top: 17px solid transparent;
+                    border-left: 25px solid $brown-light;
+                    border-bottom: 17px solid transparent;
+                    transition: $transition-base;
+                }
+            }
         }
     }
 }

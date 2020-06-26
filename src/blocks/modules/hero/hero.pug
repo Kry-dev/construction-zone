@@ -2,7 +2,7 @@ section.section.hero.my-0
     .container
         include ../header/header
         .row
-            .col-xl-6
+            .col-lg-6.col-md-12
                 .jumbotron.px-0
                     h1.hero-title.text-white Contractor Websites that Drive Traffic
                     p.hero-descr.text-white at $179/month
@@ -12,26 +12,13 @@ section.section.hero.my-0
         .hero-video--overlay
         video.hero-video--video(autoplay='', loop='', muted='')
             source(src='video/construction-zone-landing-vid-v2.mp4')
+    a.hero-video--play(data-fancybox href="video/construction-zone-landing-vid-v2.mp4")
+        span Play
     .hero-social
         .container
             .row.align-content-center
-                .col-xl-6.offset-xl-6
-                    ul.social.justify-content-end.my-auto
-                        li
-                            a.social-link(href="#")
-                                +svg('facebook')
-
-                        li
-                            a.social-link(href="#")
-                                +svg('instagram')
-
-                        li
-                            a.social-link(href="#")
-                                +svg('linkedin')
-                        li
-
-                            a.social-link(href="#")
-                                +svg('twitter')
+                .col-xl-6.offset-xl-6.col-md-12
+                    include ../social/social
 
 
 

@@ -28,20 +28,9 @@
                 a.aside-inner__link(href="tel:+180012345678") + 1800 - 123 456 78
                 a.aside-inner__link(href="tel:+18009756511") + 1800 - 975 65 11
 
-            ul.aside-socials
-                li.aside-socials__item
-                    a.aside-socials__link(href="#")
-                        +svg('facebook')
-                li.aside-socials__item
-                    a.aside-socials__link(href="#")
-                        +svg('instagram')
-                li.aside-socials__item
-                    a.aside-socials__link(href="#")
-                        +svg('linkedin')
-                li.aside-socials__item
-                    a.aside-socials__link.aside-socials__link--active(href="#")
-                        +svg('twitter')
 
+        .aside-dropdown__item.my-4
+            include ../social/social
 
         .aside-dropdown__item
             a.btn.btn-lg.btn-outline-primary.w-100(href="#") Log In

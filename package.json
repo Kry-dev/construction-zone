@@ -69,7 +69,9 @@
         "yargs": "~13.2.4"
     },
     "dependencies": {
+        "@fancyapps/fancybox": "^3.5.7",
         "bootstrap": "^4.5.0",
+        "fancybox": "^3.0.1",
         "font-awesome": "^4.7.0",
         "jquery": "^3.5.1",
         "popper.js": "^1.16.1",
