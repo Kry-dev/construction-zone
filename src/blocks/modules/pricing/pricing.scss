@@ -38,3 +38,91 @@
         }
     }
 }
+.price-table {
+    width: 100%;
+    .card {
+        margin: 0 1rem 4rem;
+    }
+    td {
+        width: 25%;
+        text-align: center;
+        padding: .5rem 1.5rem;
+        font-size: rem(16);
+        line-height: rem(14);
+        font-family: "Muli", sans-serif;
+        font-weight: 400;
+        
+        &:first-child {
+            text-align: left;
+            font-size: rem(18);
+            line-height: rem(21);
+            font-weight: 600;
+        }
+    }
+    .fa {
+        font-size: rem(20);
+    }
+    .fa.fa-check {
+        color: $primary;
+    }
+}
+@media only screen and (max-width: 800px) {
+    
+    /* Force table to not be like tables anymore */
+    .price-table {
+        display: block;
+        width: 100%;
+    }
+    .price-table table, .price-table thead, .price-table tbody, .price-table th, .price-table td, .price-table tr {
+        display: block;
+    }
+    
+    /* Hide table headers (but not display: none;, for accessibility) */
+    .price-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    .price-table tr {
+        border: 1px solid #ccc;
+    }
+    
+    .price-table td {
+        position: relative;
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        padding-left: 80%;
+        white-space: normal;
+        text-align: center;
+        &:first-child {
+            padding-left: 0;
+            text-align: center;
+            font-weight: 700;
+            &:before {
+                display: none;
+            }
+        }
+    }
+    
+    .price-table td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 80%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: 400;
+    }
+    
+    /*
+    Label the data
+    */
+    .price-table td:before {
+        content: attr(data-title);
+    }
+}

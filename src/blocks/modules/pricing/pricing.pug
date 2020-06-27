@@ -1,74 +1,181 @@
 section.section.pricing
     .container
+        .row.mb-5
+            //.col-4.col-xl-3.offset-xl-3
+            //    .card
+            //        .card-header
+            //            h4.card-title Retiree Website Maintenance
+            //        .card-body
+            //            h3.card-subtitle $29 per month
+            //            p.card-text
+            //                | Visibility & traffic idling
+            //                | Requires completion
+            //                | of  Apprentice or Foreman
+            //
+            //.col-4.col-xl-3
+            //    .card
+            //        .card-header
+            //            h4.card-title Apprentice Website + SEO Basic
+            //        .card-body
+            //            h3.card-subtitle $179 per month
+            //            p.card-text
+            //                | Slow but steady visibility &
+            //                | traffic increase
+            //            p.card-text
+            //                strong Requires 12 month commitment
+            //
+            //.col-4.col-xl-3
+            //    .card
+            //        span.badge.badge-dark Best Price
+            //
+            //        .card-header
+            //            h4.card-title Foreman Website + SEO Pro
+            //        .card-body
+            //            h3.card-subtitle $429 per month
+            //            p.card-text
+            //                | Expedited visibility
+            //                | & traffic increase
+            //            p.card-text
+            //                strong Requires 6 month commitment
         .row
-            .col-lg-3.offset-lg-3
-                .card
-                    .card-header
-                        h4.card-title Retiree Website Maintenance
-                    .card-body
-                        h3.card-subtitle $29 per month
-                        p.card-text
-                            | Visibility & traffic idling
-                            | Requires completion
-                            | of  Apprentice or Foreman
+            #price-table.price-table
+                table.w-100
+                    thead.price-table-head
+                        tr
+                            th
+                            th
+                                .card
+                                    .card-header
+                                        h4.card-title Retiree Website Maintenance
+                                    .card-body
+                                        h3.card-subtitle $29 per month
+                                        p.card-text
+                                            | Visibility & traffic idling
+                                            | Requires completion
+                                            | of  Apprentice or Foreman
+                            th
+                                .card
+                                    .card-header
+                                        h4.card-title Apprentice Website + SEO Basic
+                                    .card-body
+                                        h3.card-subtitle $179 per month
+                                        p.card-text
+                                            | Slow but steady visibility &
+                                            | traffic increase
+                                        p.card-text
+                                            strong Requires 12 month commitment
+                            th
+                                .card
+                                    span.badge.badge-dark Best Price
 
-            .col-lg-3
-                .card
-                    .card-header
-                        h4.card-title Apprentice Website + SEO Basic
-                    .card-body
-                        h3.card-subtitle $179 per month
-                        p.card-text
-                            | Slow but steady visibility &
-                            | traffic increase
-                        p.card-text
-                            strong Requires 12 month commitment
-
-            .col-lg-3
-                .card
-                    span.badge.badge-dark Best Price
-
-                    .card-header
-                        h4.card-title Foreman Website + SEO Pro
-                    .card-body
-                        h3.card-subtitle $429 per month
-                        p.card-text
-                            | Expedited visibility
-                            | & traffic increase
-                        p.card-text
-                            strong Requires 6 month commitment
-
-        .row.my_featureRow
-            .col-md-12.col-lg-4.my_feature
-                | Feature 1
-            .col-md-12.col-lg-8
-                .row
-                    .col-md-4.col-lg-4.my_planFeature.my_plan1
-                        i.fa.fa-check.my_check
-                    .col-md-4.col-lg-4.my_planFeature.my_plan2
-                        i.fa.fa-check.my_check
-                    .col-md-4.col-lg-4.my_planFeature.my_plan3
-                        i.fa.fa-check.my_check
-        .row.my_featureRow
-            .col-md-12.col-lg-4.my_feature
-                | Feature 2
-            .col-xs-12.col-md-8
-                .row
-                    .col-md-4.col-lg-4.my_planFeature.my_plan1
-                        i.fa
-                    .col-md-4.col-lg-4.my_planFeature.my_plan2
-                        i.fa.fa-check.my_check
-                    .col-md-4.col-lg-4.my_planFeature.my_plan3
-                        i.fa.fa-check.my_check
-        .row.my_featureRow
-            .col-md-12.col-lg-4.my_feature
-                | Feature 3
-            .col-md-12.col-md-8
-                .row
-                    .col-md-4.col-lg-4.my_planFeature.my_plan1
-                        i.fa
-                    .col-md-4.col-lg-4.my_planFeature.my_plan2
-                        i.fa
-                    .col-md-4.col-lg-4.my_planFeature.my_plan3
-                        i.fa.fa-check.my_check
+                                    .card-header
+                                        h4.card-title Foreman Website + SEO Pro
+                                    .card-body
+                                        h3.card-subtitle $429 per month
+                                        p.card-text
+                                            | Expedited visibility
+                                            | & traffic increase
+                                        p.card-text
+                                            strong Requires 6 month commitment
+                    tbody
+                        tr
+                            td - Beautiful design
+                            td(data-title='Retiree Website Maintenance - $29/month')  #[i.fa.fa-check]
+                            td(data-title='Apprentice Website + SEO Basic - $179/month')  #[i.fa.fa-check]
+                            td(data-title='Foreman Website + SEO Pro - $429/month')  #[i.fa.fa-check]
+                        tr
+                            td  - Unlimited pages
+                            td(data-title='Retiree Website Maintenance - $29/month')  #[i.fa.fa-check]
+                            td(data-title='Apprentice Website + SEO Basic - $179/month')  #[i.fa.fa-check]
+                            td(data-title='Foreman Website + SEO Pro - $429/month')  #[i.fa.fa-check]
+                        tr
+                            td - Resh content every month
+                            td(data-title='Retiree Website Maintenance - $29/month')  15 minutes of updates every month
+                            td(data-title='Apprentice Website + SEO Basic - $179/month')  #[i.fa.fa-check]
+                            td(data-title='Foreman Website + SEO Pro - $429/month')  #[i.fa.fa-check]
+                        tr
+                            td - Search engine visibility expansion
+                            td(data-title='Retiree Website Maintenance - $29/month')  #[i.fa.fa-check]
+                            td(data-title='Apprentice Website + SEO Basic - $179/month')  #[i.fa.fa-check]
+                            td(data-title='Foreman Website + SEO Pro - $429/month')  #[i.fa.fa-check]
+                        tr
+                            td - Google My Business optimization
+                            td(data-title='Retiree Website Maintenance - $29/month')  #[i.fa.fa-check]
+                            td(data-title='Apprentice Website + SEO Basic - $179/month')  #[i.fa.fa-check]
+                            td(data-title='Foreman Website + SEO Pro - $429/month')  #[i.fa.fa-check]
+                        tr
+                            td - Yelp optimization included
+                            td(data-title='Retiree Website Maintenance - $29/month')  #[i.fa.fa-check]
+                            td(data-title='Apprentice Website + SEO Basic - $179/month')  #[i.fa.fa-check]
+                            td(data-title='Foreman Website + SEO Pro - $429/month')  #[i.fa.fa-check]
+                        tr
+                            td - Bing optimization included
+                            td(data-title='Retiree Website Maintenance - $29/month')  #[i.fa.fa-check]
+                            td(data-title='Apprentice Website + SEO Basic - $179/month')  #[i.fa.fa-check]
+                            td(data-title='Foreman Website + SEO Pro - $429/month')  #[i.fa.fa-check]
+                        tr
+                            td - Stock images included
+                            td(data-title='Retiree Website Maintenance - $29/month')  #[i.fa.fa-check]
+                            td(data-title='Apprentice Website + SEO Basic - $179/month')  #[i.fa.fa-check]
+                            td(data-title='Foreman Website + SEO Pro - $429/month')  #[i.fa.fa-check]
+                        tr
+                            td - Search engine optimized
+                            td(data-title='Retiree Website Maintenance - $29/month')  #[i.fa.fa-check]
+                            td(data-title='Apprentice Website + SEO Basic - $179/month')  #[i.fa.fa-check]
+                            td(data-title='Foreman Website + SEO Pro - $429/month')  #[i.fa.fa-check]
+                        tr
+                            td - Mobile device responsive
+                            td(data-title='Retiree Website Maintenance - $29/month')  #[i.fa.fa-check]
+                            td(data-title='Apprentice Website + SEO Basic - $179/month')  #[i.fa.fa-check]
+                            td(data-title='Foreman Website + SEO Pro - $429/month')  #[i.fa.fa-check]
+                        tr
+                            td - Social media integrated
+                            td(data-title='Retiree Website Maintenance - $29/month')  #[i.fa.fa-check]
+                            td(data-title='Apprentice Website + SEO Basic - $179/month')  #[i.fa.fa-check]
+                            td(data-title='Foreman Website + SEO Pro - $429/month')  #[i.fa.fa-check]
+                        tr
+                            td - Sosting included ($20/mo value)
+                            td(data-title='Retiree Website Maintenance - $29/month')  #[i.fa.fa-check]
+                            td(data-title='Apprentice Website + SEO Basic - $179/month')  #[i.fa.fa-check]
+                            td(data-title='Foreman Website + SEO Pro - $429/month')  #[i.fa.fa-check]
+                        tr
+                            td - SSL included ($12/mo value)
+                            td(data-title='Retiree Website Maintenance - $29/month')  #[i.fa.fa-check]
+                            td(data-title='Apprentice Website + SEO Basic - $179/month')  #[i.fa.fa-check]
+                            td(data-title='Foreman Website + SEO Pro - $429/month')  #[i.fa.fa-check]
+                        tr
+                            td - Quarterly SEO report
+                            td(data-title='Retiree Website Maintenance - $29/month')  #[i.fa.fa-check]
+                            td(data-title='Apprentice Website + SEO Basic - $179/month')  #[i.fa.fa-check]
+                            td(data-title='Foreman Website + SEO Pro - $429/month')  #[i.fa.fa-check]
+                        tr
+                            td - Free site audit every 36 months
+                            td(data-title='Retiree Website Maintenance - $29/month')  #[i.fa.fa-check]
+                            td(data-title='Apprentice Website + SEO Basic - $179/month')  #[i.fa.fa-check]
+                            td(data-title='Foreman Website + SEO Pro - $429/month')  #[i.fa.fa-check]
+                        tr
+                            td - Google Analytics included
+                            td(data-title='Retiree Website Maintenance - $29/month')  #[i.fa.fa-check]
+                            td(data-title='Apprentice Website + SEO Basic - $179/month')  #[i.fa.fa-check]
+                            td(data-title='Foreman Website + SEO Pro - $429/month')  #[i.fa.fa-check]
+                        tr
+                            td - Top notch security
+                            td(data-title='Retiree Website Maintenance - $29/month')  #[i.fa.fa-check]
+                            td(data-title='Apprentice Website + SEO Basic - $179/month')  #[i.fa.fa-check]
+                            td(data-title='Foreman Website + SEO Pro - $429/month')  #[i.fa.fa-check]
+                        tr
+                            td - 24/7 online support
+                            td(data-title='Retiree Website Maintenance - $29/month')  #[i.fa.fa-check]
+                            td(data-title='Apprentice Website + SEO Basic - $179/month')  #[i.fa.fa-check]
+                            td(data-title='Foreman Website + SEO Pro - $429/month')  #[i.fa.fa-check]
+                        tr
+                            td - Hours of SEO work per month
+                            td(data-title='Retiree Website Maintenance - $29/month')  0
+                            td(data-title='Apprentice Website + SEO Basic - $179/month')  2
+                            td(data-title='Foreman Website + SEO Pro - $429/month')  6
+                        tr
+                            td - Additional work
+                            td(data-title='Retiree Website Maintenance - $29/month')  at $99/hr
+                            td(data-title='Apprentice Website + SEO Basic - $179/month')  at $89/hr
+                            td(data-title='Foreman Website + SEO Pro - $429/month')  at $79/hr
 
