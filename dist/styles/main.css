@@ -5117,6 +5117,7 @@ template {
 }
 
 html {
+  height: 100%;
   overflow-x: hidden;
 }
 
@@ -5380,7 +5381,6 @@ ul {
   display: flex;
   align-items: center;
   height: 100%;
-  background: #fff;
 }
 
 .navbar .nav-menu {
