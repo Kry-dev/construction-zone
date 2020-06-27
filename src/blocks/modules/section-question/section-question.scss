@@ -1,7 +1,13 @@
 .question {
+    @include media-breakpoint-down(sm) {
+        padding: 80px 0;
+    }
     position: relative;
     padding: 160px 0;
     .question-bg {
+        @include media-breakpoint-down(md) {
+            left: 0;
+        }
         position: absolute;
         z-index: -1;
         top: 0;
@@ -26,6 +32,9 @@
         }
     }
     &-card {
+        @include media-breakpoint-down(md) {
+            padding: 4rem;
+        }
         padding: 6rem;
         background: $dark;
     }

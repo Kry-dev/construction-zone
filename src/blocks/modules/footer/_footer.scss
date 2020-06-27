@@ -5,6 +5,9 @@
         margin-bottom: 2rem;
     }
     &-col {
+        @include media-breakpoint-down(sm) {
+            padding: rem(24) rem(15);
+        }
         padding: rem(24) 0;
         .lead {
             margin-bottom: rem(20);
@@ -12,6 +15,9 @@
         &--border {
             position: relative;
             &:before {
+                @include media-breakpoint-down(sm) {
+                    left: 15px;
+                }
                 content: "";
                 display: block;
                 position: absolute;

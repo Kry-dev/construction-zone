@@ -16,6 +16,15 @@ h1, h2, h3, h4, h5, h6, ul {
     font-family: "Philosopher", sans-serif;
 }
 .section {
+    @include media-breakpoint-down(md) {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        .img-fluid {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
     width: 100%;
     margin-top: 140px;
     margin-bottom: 140px;
@@ -41,12 +50,28 @@ h1, h2, h3, h4, h5, h6, ul {
         }
     }
     .jumbotron {
+        @include media-breakpoint-down(md) {
+            width: 100%;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 4rem 0;
+        }
+        @include media-breakpoint-down(sm) {
+            max-width: 540px;
+            .btn {
+                text-align: center;
+                display: block;
+            }
+        }
         max-width: 600px;
         padding: 88px 2rem;
         margin-bottom: 0;
     }
     
     &-title {
+        @include media-breakpoint-down(sm) {
+            font-size: rem(32);
+        }
         font-family: "Philosopher", sans-serif;
         font-size: rem(42);
         line-height: 1.2;
@@ -66,6 +91,11 @@ h1, h2, h3, h4, h5, h6, ul {
         }
     }
     &-descr {
+        @include media-breakpoint-down(sm) {
+            font-size: rem(24);
+            line-height: rem(30);
+            margin-bottom: rem(24);
+        }
         font-family: "Muli", sans-serif;
         font-weight: 400;
         font-size: rem(30);
