@@ -8,8 +8,17 @@ section.section.hero.my-0
                     p.hero-descr.text-white at $179/month
                     a.btn.btn-lg.btn-outline-primary(href='#', role='button') Get started
 
-    .hero-picture
-
+    .hero-video
+        .hero-video--overlay
+        video.hero-video--video(autoplay='', loop='', muted='')
+            source(src='video/construction-zone-landing-vid-v2.mp4')
+    a.hero-video--play(data-fancybox href="video/construction-zone-landing-vid-v2.mp4")
+        span Play
+    .hero-social
+        .container
+            .row.align-content-center
+                .col-xl-6.offset-xl-6.col-md-12
+                    include ../social/social
 
 
 
