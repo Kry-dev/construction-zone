@@ -8329,6 +8329,11 @@ ul {
   color: #c2956c !important;
 }
 
+.btn-dark:hover,
+.btn-dark:focus {
+  color: #c2956c;
+}
+
 .display-4 {
   font-size: 3.125rem;
 }
@@ -8981,6 +8986,20 @@ ul {
   text-align: center;
 }
 
+.pricing .card .badge {
+  position: absolute;
+  top: 0;
+  right: -1rem;
+  padding: 1rem .5rem;
+  text-transform: uppercase;
+  border-radius: 0;
+  font-weight: 700;
+  font-family: "Muli", sans-serif;
+  font-size: 0.875rem;
+  transform: translateY(-50%);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+}
+
 .pricing .card-header {
   border: 0;
   padding: 2rem 1rem 0;
@@ -8998,26 +9017,24 @@ ul {
   margin-bottom: 1rem;
 }
 
-.pricing .card .badge {
-  position: absolute;
-  top: 0;
-  right: -1rem;
-  padding: 1rem .5rem;
-  text-transform: uppercase;
-  border-radius: 0;
-  font-weight: 700;
-  font-family: "Muli", sans-serif;
-  font-size: 0.875rem;
-  transform: translateY(-50%);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
-}
-
 .price-table {
   width: 100%;
 }
 
 .price-table .card {
   margin: 0 1rem 4rem;
+}
+
+.price-table .fa {
+  font-size: 1.25rem;
+}
+
+.price-table .fa.fa-check {
+  color: #c2956c;
+}
+
+.price-table tbody .btn {
+  display: none;
 }
 
 .price-table td {
@@ -9035,14 +9052,6 @@ ul {
   font-size: 1.125rem;
   line-height: 1.3125rem;
   font-weight: 600;
-}
-
-.price-table .fa {
-  font-size: 1.25rem;
-}
-
-.price-table .fa.fa-check {
-  color: #c2956c;
 }
 
 @media (min-width: 576px) {
@@ -14415,6 +14424,66 @@ ul {
   }
 }
 
+@media only screen and (max-width: 992px) {
+  /* Force table to not be like tables anymore */
+
+  .price-table {
+    display: block;
+    width: 100%;
+  }
+
+  .price-table table,
+  .price-table thead,
+  .price-table tbody,
+  .price-table th,
+  .price-table td,
+  .price-table tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+
+  .price-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .price-table tr {
+    border: 1px solid #ccc;
+  }
+
+  .price-table td {
+    position: relative;
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    padding-left: 70%;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .price-table td:first-child {
+    padding-left: 0;
+    text-align: center;
+    font-weight: 700;
+    width: 100%;
+  }
+
+  .price-table td:first-child:before {
+    display: none;
+  }
+
+  .price-table td:before {
+    /* Now like a table header */
+    /* Top/left values mimic padding */
+  }
+
+  /*
+    Label the data
+    */
+}
+
 @media (max-width: 991.98px) {
   .navbar-expand-lg > .container,
   .navbar-expand-lg > .container-fluid,
@@ -14479,76 +14548,40 @@ ul {
   .question-card {
     padding: 4rem;
   }
-}
 
-@media only screen and (max-width: 800px) {
-  /* Force table to not be like tables anymore */
+  .price-table .fa {
+    margin: 1rem auto;
+  }
 
-  .price-table {
+  .price-table tbody .btn {
     display: block;
-    width: 100%;
+    min-width: 90px;
+    max-width: 120px;
+    margin: 0 auto;
+    padding: .5rem;
+    font-size: 0.875rem;
   }
 
-  .price-table table,
-  .price-table thead,
-  .price-table tbody,
-  .price-table th,
-  .price-table td,
-  .price-table tr {
-    display: block;
-  }
-
-  /* Hide table headers (but not display: none;, for accessibility) */
-
-  .price-table thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-
-  .price-table tr {
-    border: 1px solid #ccc;
+  .price-table tfoot {
+    display: none;
   }
 
   .price-table td {
-    position: relative;
-    /* Behave  like a "row" */
-    border: none;
-    border-bottom: 1px solid #eee;
-    padding-left: 80%;
-    white-space: normal;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 1rem 1rem;
+  }
+
+  .price-table td:before {
+    content: attr(data-title);
+    left: 0;
+    width: 100%;
     text-align: center;
   }
 
   .price-table td:first-child {
-    padding-left: 0;
-    text-align: center;
-    font-weight: 700;
-  }
-
-  .price-table td:first-child:before {
-    display: none;
-  }
-
-  .price-table td:before {
-    /* Now like a table header */
-    position: absolute;
-    /* Top/left values mimic padding */
-    top: 6px;
-    left: 6px;
-    width: 80%;
-    padding-right: 10px;
-    white-space: nowrap;
-    text-align: left;
-    font-weight: 400;
-  }
-
-  /*
-    Label the data
-    */
-
-  .price-table td:before {
-    content: attr(data-title);
+    text-transform: uppercase;
   }
 }
 
