@@ -5913,6 +5913,46 @@ ul {
   background: #302b2b;
 }
 
+.pricing .card {
+  position: relative;
+  min-height: 18.75rem;
+  border: 0;
+  background: #c2956c;
+  box-shadow: 0 0.5rem 1rem rgba(194, 149, 108, 0.45);
+  text-align: center;
+}
+
+.pricing .card-header {
+  border: 0;
+  padding: 2rem 1rem 0;
+}
+
+.pricing .card-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Muli", sans-serif;
+}
+
+.pricing .card-subtitle {
+  color: #fff;
+  font-family: "Muli", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.pricing .card .badge {
+  position: absolute;
+  top: 0;
+  right: -1rem;
+  padding: 1rem .5rem;
+  text-transform: uppercase;
+  border-radius: 0;
+  font-weight: 700;
+  font-family: "Muli", sans-serif;
+  font-size: 0.875rem;
+  transform: translateY(-50%);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+}
+
 @media (min-width: 576px) {
   .d-sm-none {
     display: none !important;
