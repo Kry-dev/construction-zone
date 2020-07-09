@@ -95,8 +95,14 @@
     &-form__subtitle {
         color: $brown-light;
         font-family: "Muli", sans-serif;
-        //text-align: center;
-        //font-size: rem(36);
-        //line-height: 1.2;
+    }
+    .input-group-prepend {
+        .input-group-text {
+            padding-left: 0;
+            background: transparent;
+            color: $brown-light;
+            border-color: transparent;
+            border-bottom: 1px solid rgba($white, .5);
+        }
     }
 }

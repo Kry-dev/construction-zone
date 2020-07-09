@@ -288,7 +288,8 @@
                   </tr>
                 </tfoot>
               </table>
-              <div class="payment" style="display:none;">
+              <!--.payment(style="display:none;")-->
+              <div class="payment">
                 <div class="payment-wrap">
                   <div class="payment-wrap__left">
                     <button class="payment-close"><i class="fa fa-angle-left"></i></button>
@@ -351,10 +352,15 @@
                         <div class="form-group col-md-12">
                           <input class="form-control" type="text" placeholder="Billing Name">
                         </div>
-                        <div class="form-group col-md-12">
-                          <input class="form-control" type="text" placeholder="Billing Card Number">
+                      </div>
+                      <div class="form-row mb-5">
+                        <div class="input-group col-md-12">
+                          <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-credit-card"></i></span></div>
+                          <input class="form-control mb-0" type="text" name="cardNumber" placeholder="Billing Card Number">
                         </div>
-                        <div class="form-group form-check">
+                      </div>
+                      <div class="form-row mb-3">
+                        <div class="form-group form-check mb-0">
                           <input class="form-check-input" id="checkTerms" type="checkbox">
                           <label class="form-check-label text-white" for="checkTerms">I accept <a href="#">terms of service</a></label>
                         </div>

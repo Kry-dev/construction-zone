@@ -1,4 +1,5 @@
-.payment(style="display:none;")
+//.payment(style="display:none;")
+.payment
     .payment-wrap
         .payment-wrap__left
             button.payment-close
@@ -45,9 +46,14 @@
                         h4.payment-form__subtitle Billing
                     .form-group.col-md-12
                         input.form-control(type='text', placeholder='Billing Name')
-                    .form-group.col-md-12
-                        input.form-control(type='text', placeholder='Billing Card Number')
-                    .form-group.form-check
+                .form-row.mb-5
+                    .input-group.col-md-12
+                        .input-group-prepend
+                            span.input-group-text
+                                i.fa.fa-credit-card
+                        input.form-control.mb-0(type='text', name='cardNumber', placeholder='Billing Card Number')
+                .form-row.mb-3
+                    .form-group.form-check.mb-0
                         input#checkTerms.form-check-input(type='checkbox')
                         label.form-check-label.text-white(for='checkTerms') I accept #[a(href="#") terms of service]
 

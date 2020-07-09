@@ -9169,6 +9169,14 @@ ul {
   font-family: "Muli", sans-serif;
 }
 
+.payment .input-group-prepend .input-group-text {
+  padding-left: 0;
+  background: transparent;
+  color: #c2956c;
+  border-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
 @media (min-width: 576px) {
   .d-sm-none {
     display: none !important;
