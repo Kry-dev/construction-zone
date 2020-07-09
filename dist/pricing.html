@@ -104,44 +104,6 @@
     <main class="main">
       <section class="section pricing">
         <div class="container">
-          <div class="row mb-5">
-            <!--.col-4.col-xl-3.offset-xl-3-->
-            <!--    .card-->
-            <!--        .card-header-->
-            <!--            h4.card-title Retiree Website Maintenance-->
-            <!--        .card-body-->
-            <!--            h3.card-subtitle $29 per month-->
-            <!--            p.card-text-->
-            <!--                | Visibility & traffic idling-->
-            <!--                | Requires completion-->
-            <!--                | of  Apprentice or Foreman-->
-            <!---->
-            <!--.col-4.col-xl-3-->
-            <!--    .card-->
-            <!--        .card-header-->
-            <!--            h4.card-title Apprentice Website + SEO Basic-->
-            <!--        .card-body-->
-            <!--            h3.card-subtitle $179 per month-->
-            <!--            p.card-text-->
-            <!--                | Slow but steady visibility &-->
-            <!--                | traffic increase-->
-            <!--            p.card-text-->
-            <!--                strong Requires 12 month commitment-->
-            <!---->
-            <!--.col-4.col-xl-3-->
-            <!--    .card-->
-            <!--        span.badge.badge-dark Best Price-->
-            <!---->
-            <!--        .card-header-->
-            <!--            h4.card-title Foreman Website + SEO Pro-->
-            <!--        .card-body-->
-            <!--            h3.card-subtitle $429 per month-->
-            <!--            p.card-text-->
-            <!--                | Expedited visibility-->
-            <!--                | & traffic increase-->
-            <!--            p.card-text-->
-            <!--                strong Requires 6 month commitment-->
-          </div>
           <div class="row">
             <div class="price-table" id="price-table">
               <table class="w-100">
@@ -326,6 +288,82 @@
                   </tr>
                 </tfoot>
               </table>
+              <div class="payment">
+                <div class="payment-wrap">
+                  <div class="payment-wrap__left">
+                    <button class="payment-close"><i class="fa fa-angle-left"></i></button>
+                    <div class="card">
+                      <div class="card-header">
+                        <h4 class="card-title">Retiree Website Maintenance</h4>
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-subtitle">$29 per month</h3>
+                        <p class="card-text">
+                          Visibility & traffic idling
+                          Requires completion
+                          of  Apprentice or Foreman
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="payment-wrap__right">
+                    <form class="payment-form">
+                      <h3 class="payment-form__title">Payment</h3>
+                      <div class="form-group mb-5">
+                        <h4 class="payment-form__subtitle">Have a coupon?</h4>
+                        <input class="form-control" id="payment_coupon" type="text" placeholder="Coupon Code">
+                        <button class="btn btn-outline-primary btn-sm border-0" type="button">Apply Code</button>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-12">
+                          <h4 class="payment-form__subtitle">Account</h4>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <input class="form-control" type="text" placeholder="Business Name">
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <input class="form-control" type="text" placeholder="First Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <input class="form-control" type="text" placeholder="Last Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <input class="form-control" type="text" placeholder="Phone">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <input class="form-control" type="email" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <input class="form-control" type="password" placeholder="Password">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <input class="form-control" type="password" placeholder="Repeat Password">
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-12">
+                          <h4 class="payment-form__subtitle">Billing</h4>
+                        </div>
+                        <div class="form-group col-md-12">
+                          <input class="form-control" type="text" placeholder="Billing Name">
+                        </div>
+                        <div class="form-group col-md-12">
+                          <input class="form-control" type="text" placeholder="Billing Card Number">
+                        </div>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" id="checkTerms" type="checkbox">
+                          <label class="form-check-label text-white" for="checkTerms">I accept <a href="#">terms of service</a></label>
+                        </div>
+                      </div>
+                      <button class="btn btn-outline-primary" type="button">Checkout Now</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
