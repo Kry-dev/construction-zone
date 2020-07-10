@@ -16,7 +16,7 @@
         .payment-wrap__right
             form.payment-form
                 h3.payment-form__title Payment
-                .form-group.mb-5
+                .form-group.mb-4
                     h4.payment-form__subtitle Have a coupon?
                     input#payment_coupon.form-control(type='text', placeholder='Coupon Code')
                     button.btn.btn-outline-primary.btn-sm.border-0(type="button") Apply Code
@@ -27,7 +27,7 @@
                 .form-row
                     .form-group.col-md-6
                         input.form-control(type='text', placeholder='Business Name')
-                .form-row
+                .form-row.mb-4
 
                     .form-group.col-md-6
                         input.form-control(type='text', placeholder='First Name')
@@ -47,21 +47,24 @@
                             option(value="01") Value 1
                             option(value="02") Value 2
                             option(value="03") Value 3
-
                 .form-row
                     .form-group.col-md-12
                         h4.payment-form__subtitle Billing
-                    .form-group.col-md-12
+                    .form-group.col-md-12.mb-0
                         input.form-control(type='text', placeholder='Billing Name')
-                .form-row.mb-5
+                .form-row.mb-4
                     .input-group.col-md-12
                         .input-group-prepend
                             span.input-group-text
                                 i.fa.fa-credit-card
                         input.form-control.mb-0(type='text', name='cardNumber', placeholder='Billing Card Number')
-                .form-row.mb-3
-                    .form-group.form-check.mb-0
-                        input#checkTerms.form-check-input(type='checkbox')
-                        label.form-check-label.text-white(for='checkTerms') I accept #[a(href="#") terms of service]
+                .form-row.mb-4
+                    .d-flex.flex-row.pl-2
+                        .pretty.p-default.p-smooth.p-bigger
+                            input(type='checkbox')
+                            .state.p-primary
+                                label
+                        span.text-white I accept #[a(href='#') terms of service]
 
-                button.btn.btn-outline-primary(type="button") Checkout Now
+                .form-row
+                    button.btn.btn-outline-primary(type="button") Checkout Now

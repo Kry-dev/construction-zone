@@ -101,7 +101,7 @@
             border-color: transparent;
             border-bottom: 1px solid rgba($white, .5);
             background: transparent;
-            margin-bottom: 1rem;
+            margin-bottom: 0;
             color: $white;
             &:focus {
                 outline: 0;
@@ -157,5 +157,8 @@
             border-radius: 0;
             font-size: 1rem;
         }
+    }
+    .pretty .state label:before, .pretty .state label:after {
+        top: 0;
     }
 }
