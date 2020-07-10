@@ -1,13 +1,3 @@
-modules.define('payment', ['i-bem-dom'], function(provide, bemDom) {
+import $ from "jquery";
 
-provide(bemDom.declBlock(this.name, {
-    onSetMod: {
-        js: {
-            inited: function() {
-                
-            }
-        }
-    }
-}));
-
-});
+$(".selectpicker").selectpicker();

@@ -1,4 +1,4 @@
-//.payment(style="display:none;")
+.payment(style="display:none;")
 .payment
     .payment-wrap
         .payment-wrap__left
@@ -41,6 +41,13 @@
                         input.form-control(type='password', placeholder='Password')
                     .form-group.col-md-6
                         input.form-control(type='password', placeholder='Repeat Password')
+                    .form-group.col-md-12
+                        select.selectpicker.w-100(data-show-content="true")
+                            option Preferred method of communication...
+                            option(value="01") Value 1
+                            option(value="02") Value 2
+                            option(value="03") Value 3
+
                 .form-row
                     .form-group.col-md-12
                         h4.payment-form__subtitle Billing
