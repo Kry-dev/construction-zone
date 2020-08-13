@@ -13684,6 +13684,10 @@ ul {
     padding: 4rem 0;
   }
 
+  .hero {
+    min-height: auto;
+  }
+
   .hero .jumbotron {
     max-width: 100%;
   }
@@ -13698,6 +13702,14 @@ ul {
 
   .hero-video {
     display: none;
+  }
+
+  .hero-video--play {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin: 0 auto 1rem;
+    transform: translateX(0);
   }
 
   .hero-picture {
@@ -13849,7 +13861,6 @@ ul {
   }
 
   .hero-video--play {
-    bottom: 120px;
     width: 90px;
     height: 90px;
   }
