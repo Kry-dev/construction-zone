@@ -252,18 +252,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default()(".selectpicker").selectpicker();
-jquery__WEBPACK_IMPORTED_MODULE_0___default()(".payment").on('show.bs.modal', function (event) {
-  var button = jquery__WEBPACK_IMPORTED_MODULE_0___default()(event.relatedTarget); // Button that triggered the modal
-
-  var recipient = button.data('whatever'); // Extract info from data-* attributes
-  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-
-  var modal = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this);
-  modal.find(".modal-title").text('New message to ' + recipient);
-  modal.find(".modal-body input").val(recipient);
-});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(".selectpicker").selectpicker(); // $(".payment").collapse();
+// $(".payment").on('show.bs.modal', function (event) {
+//     let button = $(event.relatedTarget);// Button that triggered the modal
+//     let recipient = button.data('whatever');// Extract info from data-* attributes
+//     // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+//     // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+//     let modal = $(this);
+//     modal.find(".modal-title").text('New message to ' + recipient);
+//     modal.find(".modal-body input").val(recipient);
+// });
 
 /***/ }),
 

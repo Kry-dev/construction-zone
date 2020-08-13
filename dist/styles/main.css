@@ -7697,6 +7697,7 @@ ul {
   top: -3rem;
   right: -2px;
   left: auto;
+  height: 105%;
   border: 0;
   outline: 0;
 }
@@ -7705,6 +7706,10 @@ ul {
 .pricing .container .payment:focus {
   border: 0;
   outline: 0;
+}
+
+.pricing-cards {
+  position: relative;
 }
 
 .pricing .card {
@@ -7772,28 +7777,39 @@ ul {
   text-align: center;
 }
 
-.modal-pricing-plan .pricing-title {
+.collapse-pricing-plan {
+  position: absolute;
+  z-index: 1050;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 3rem 1rem 1rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.collapse-pricing-plan .pricing-title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.modal-pricing-plan .pricing-title span {
+.collapse-pricing-plan .pricing-title span {
   width: 100px;
   text-align: right;
 }
 
-.modal-pricing-plan .fa {
+.collapse-pricing-plan .fa {
   color: #c2956c;
 }
 
-.modal-pricing-plan .modal-footer {
+.collapse-pricing-plan .modal-footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.modal-pricing-plan .close {
+.collapse-pricing-plan .close {
   position: absolute;
   top: -1rem;
   right: -3rem;
@@ -13544,7 +13560,16 @@ ul {
     margin: -12.5% auto 0;
   }
 
-  .pricing .card {
+  .pricing .container .payment {
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: auto;
+    padding-top: 0;
+  }
+
+  .pricing-cards .card {
     height: 100%;
   }
 
@@ -13829,7 +13854,7 @@ ul {
     padding: 80px 0;
   }
 
-  .pricing .card {
+  .pricing-cards .card {
     margin-bottom: 1rem;
     height: auto;
   }

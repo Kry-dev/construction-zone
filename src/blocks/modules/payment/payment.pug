@@ -1,7 +1,7 @@
-.payment(style="display:none;",tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true")
+#payment29.payment.collapse
     .payment-wrap
         .payment-wrap__left
-            button.payment-close(data-dismiss="modal")
+            button.payment-close(data-toggle="collapse", data-target="#payment29")
                 i.fa.fa-angle-left
             .card
                 .card-header
@@ -12,6 +12,148 @@
                         | Visibility & traffic idling
                         | Requires completion
                         | of  Apprentice or Foreman
+        .payment-wrap__right
+            form.payment-form
+                h3.payment-form__title Payment
+                .form-group.mb-4
+                    h4.payment-form__subtitle Have a coupon?
+                    input#payment_coupon.form-control(type='text', placeholder='Coupon Code')
+                    button.btn.btn-outline-primary.btn-sm.border-0(type="button") Apply Code
+
+                .form-row
+                    .form-group.col-md-12
+                        h4.payment-form__subtitle Account
+                .form-row
+                    .form-group.col-md-6
+                        input.form-control(type='text', placeholder='Business Name')
+                .form-row.mb-4
+
+                    .form-group.col-md-6
+                        input.form-control(type='text', placeholder='First Name')
+                    .form-group.col-md-6
+                        input.form-control(type='text', placeholder='Last Name')
+                    .form-group.col-md-6
+                        input.form-control(type='text', placeholder='Phone')
+                    .form-group.col-md-6
+                        input.form-control(type='email', placeholder='Email')
+                    .form-group.col-md-6
+                        input.form-control(type='password', placeholder='Password')
+                    .form-group.col-md-6
+                        input.form-control(type='password', placeholder='Repeat Password')
+                    .form-group.col-md-12
+                        select.selectpicker.w-100(data-show-content="true")
+                            option Preferred method of communication...
+                            option(value="01") Value 1
+                            option(value="02") Value 2
+                            option(value="03") Value 3
+                .form-row
+                    .form-group.col-md-12
+                        h4.payment-form__subtitle Billing
+                    .form-group.col-md-12.mb-0
+                        input.form-control(type='text', placeholder='Billing Name')
+                .form-row.mb-4
+                    .input-group.col-md-12
+                        .input-group-prepend
+                            span.input-group-text
+                                i.fa.fa-credit-card
+                        input.form-control.mb-0(type='text', name='cardNumber', placeholder='Billing Card Number')
+                .form-row.mb-4
+                    .d-flex.flex-row.pl-2
+                        .pretty.p-default.p-smooth.p-bigger
+                            input(type='checkbox')
+                            .state.p-primary
+                                label
+                        span.text-white I accept #[a(href='#') terms of service]
+
+                .form-row
+                    button.btn.btn-outline-primary(type="button") Checkout Now
+#payment179.payment.collapse
+    .payment-wrap
+        .payment-wrap__left
+            button.payment-close(data-toggle="collapse", data-target="#payment179")
+                i.fa.fa-angle-left
+            .card
+                .card-header
+                    h4.card-title Apprentice Website + SEO Basic
+                .card-body
+                    h3.card-subtitle $179 per month
+                    p.card-text
+                        | Slow but steady visibility &
+                        | traffic increase
+                    p.card-text
+                        strong Requires 12 month commitment
+        .payment-wrap__right
+            form.payment-form
+                h3.payment-form__title Payment
+                .form-group.mb-4
+                    h4.payment-form__subtitle Have a coupon?
+                    input#payment_coupon.form-control(type='text', placeholder='Coupon Code')
+                    button.btn.btn-outline-primary.btn-sm.border-0(type="button") Apply Code
+
+                .form-row
+                    .form-group.col-md-12
+                        h4.payment-form__subtitle Account
+                .form-row
+                    .form-group.col-md-6
+                        input.form-control(type='text', placeholder='Business Name')
+                .form-row.mb-4
+
+                    .form-group.col-md-6
+                        input.form-control(type='text', placeholder='First Name')
+                    .form-group.col-md-6
+                        input.form-control(type='text', placeholder='Last Name')
+                    .form-group.col-md-6
+                        input.form-control(type='text', placeholder='Phone')
+                    .form-group.col-md-6
+                        input.form-control(type='email', placeholder='Email')
+                    .form-group.col-md-6
+                        input.form-control(type='password', placeholder='Password')
+                    .form-group.col-md-6
+                        input.form-control(type='password', placeholder='Repeat Password')
+                    .form-group.col-md-12
+                        select.selectpicker.w-100(data-show-content="true")
+                            option Preferred method of communication...
+                            option(value="01") Value 1
+                            option(value="02") Value 2
+                            option(value="03") Value 3
+                .form-row
+                    .form-group.col-md-12
+                        h4.payment-form__subtitle Billing
+                    .form-group.col-md-12.mb-0
+                        input.form-control(type='text', placeholder='Billing Name')
+                .form-row.mb-4
+                    .input-group.col-md-12
+                        .input-group-prepend
+                            span.input-group-text
+                                i.fa.fa-credit-card
+                        input.form-control.mb-0(type='text', name='cardNumber', placeholder='Billing Card Number')
+                .form-row.mb-4
+                    .d-flex.flex-row.pl-2
+                        .pretty.p-default.p-smooth.p-bigger
+                            input(type='checkbox')
+                            .state.p-primary
+                                label
+                        span.text-white I accept #[a(href='#') terms of service]
+
+                .form-row
+                    button.btn.btn-outline-primary(type="button") Checkout Now
+#payment429.payment.collapse
+    .payment-wrap
+        .payment-wrap__left
+            button.payment-close(data-toggle="collapse", data-target="#payment429")
+                i.fa.fa-angle-left
+            .card
+                span.badge.badge-dark Best Price
+
+                .card-header
+                    h4.card-title Foreman Website + SEO Pro
+                .card-body
+                    h3.card-subtitle $429 per month
+                    p.card-text
+                        | Expedited visibility
+                        | & traffic increase
+                    p.card-text
+                        strong Requires 6 month commitment
         .payment-wrap__right
             form.payment-form
                 h3.payment-form__title Payment
