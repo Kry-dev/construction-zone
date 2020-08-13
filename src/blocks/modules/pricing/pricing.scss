@@ -105,6 +105,9 @@
             text-align: center;
         }
     }
+    &-card-item {
+        position: relative;
+    }
 }
 .collapse-pricing-plan {
     position: absolute;

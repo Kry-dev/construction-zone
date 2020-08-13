@@ -7777,6 +7777,10 @@ ul {
   text-align: center;
 }
 
+.pricing-card-item {
+  position: relative;
+}
+
 .collapse-pricing-plan {
   position: absolute;
   z-index: 1050;
