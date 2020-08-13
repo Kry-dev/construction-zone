@@ -1,5 +1,27 @@
 .pricing {
+    .container {
+        position: relative;
+        .payment {
+            top: -3rem;
+            right: -2px;
+            left: auto;
+            border: 0;
+            outline: 0;
+            &:hover, &:focus {
+                border: 0;
+                outline: 0;
+            }
+        }
+    }
+    
     .card {
+        @include media-breakpoint-down(lg) {
+            height: 100%;
+        }
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 1rem;
+            height: auto;
+        }
         position: relative;
         min-height: rem(300);
         border: 0;
@@ -24,7 +46,9 @@
             padding: 2rem 1rem 0;
         }
         &-body {
-        
+            @include media-breakpoint-down(md) {
+                padding: .75rem;
+            }
         }
         &-title {
             text-transform: uppercase;
@@ -36,9 +60,73 @@
             font-family: "Muli", sans-serif;
             margin-bottom: 1rem;
         }
+        &-footer {
+            @include media-breakpoint-down(lg) {
+                display: flex;
+                flex-direction: column;
+                border: 0;
+                .btn {
+                    display: block;
+                    font-size: rem(12);
+                    width: 100%;
+                    margin: .5rem auto;
+                }
+            }
+            display: none;
+        }
+    }
+    .pricing-title {
+        text-align: left;
+    }
+    .pricing-description {
+        font-family: "Muli", sans-serif;
+        position: relative;
+        .fa {
+            display: block;
+            color: $primary;
+            margin: .5rem auto;
+            text-align: center;
+        }
+        p, .fa {
+            text-align: center;
+        }
+    }
+}
+.modal-pricing-plan {
+    .pricing-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        span {
+            width: 100px;
+            text-align: right;
+        }
+    }
+    .fa {
+        color: $primary;
+    }
+    .modal-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .close {
+        position: absolute;
+        top: -1rem;
+        right: -3rem;
+        border: 0;
+        background: transparent;
+        font-size: 2rem;
+        color: $white;
     }
 }
 .price-table {
+    @include media-breakpoint-down(md) {
+        display: none;
+        .card {
+            display: block;
+        }
+    }
     position: relative;
     width: 100%;
     padding-top: 1.5rem;

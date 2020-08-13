@@ -253,6 +253,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(".selectpicker").selectpicker();
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(".payment").on('show.bs.modal', function (event) {
+  var button = jquery__WEBPACK_IMPORTED_MODULE_0___default()(event.relatedTarget); // Button that triggered the modal
+
+  var recipient = button.data('whatever'); // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+
+  var modal = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this);
+  modal.find(".modal-title").text('New message to ' + recipient);
+  modal.find(".modal-body input").val(recipient);
+});
+
+/***/ }),
+
+/***/ "./src/blocks/modules/pricing/pricing.js":
+/*!***********************************************!*\
+  !*** ./src/blocks/modules/pricing/pricing.js ***!
+  \***********************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+ // $(".modal").modal();
 
 /***/ }),
 
@@ -281,8 +307,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var popper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js");
 /* harmony import */ var bootstrap_select_dist_js_bootstrap_select_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap-select/dist/js/bootstrap-select.js */ "./node_modules/bootstrap-select/dist/js/bootstrap-select.js");
 /* harmony import */ var bootstrap_select_dist_js_bootstrap_select_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap_select_dist_js_bootstrap_select_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
-/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var bootstrap_dist_js_bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bootstrap/dist/js/bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
+/* harmony import */ var bootstrap_dist_js_bootstrap__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_js_bootstrap__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _fancyapps_fancybox_dist_jquery_fancybox_min_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fancyapps/fancybox/dist/jquery.fancybox.min.js */ "./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js");
 /* harmony import */ var _fancyapps_fancybox_dist_jquery_fancybox_min_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_fancyapps_fancybox_dist_jquery_fancybox_min_js__WEBPACK_IMPORTED_MODULE_4__);
 
@@ -306,6 +332,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_aside_dropdown_aside_dropdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/aside-dropdown/aside-dropdown */ "./src/blocks/modules/aside-dropdown/aside-dropdown.js");
 /* harmony import */ var _modules_hero_hero__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/hero/hero */ "./src/blocks/modules/hero/hero.js");
 /* harmony import */ var _modules_payment_payment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/payment/payment */ "./src/blocks/modules/payment/payment.js");
+/* harmony import */ var _modules_pricing_pricing__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/pricing/pricing */ "./src/blocks/modules/pricing/pricing.js");
+
 
 
 

@@ -1,7 +1,7 @@
-.payment(style="display:none;")
+.payment(style="display:none;",tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true")
     .payment-wrap
         .payment-wrap__left
-            button.payment-close
+            button.payment-close(data-dismiss="modal")
                 i.fa.fa-angle-left
             .card
                 .card-header
